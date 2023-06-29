@@ -1,0 +1,35 @@
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import PagesLayout from "./layout/PagesLayout";
+
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
+import Signin from "./pages/Signin";
+import Faq from "./pages/help/Faq";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<PagesLayout />}>
+      <Route index path="home" element={<Home />} />
+
+      <Route path="register" element={<Register />} />
+      <Route path="signin" element={<Signin />} />
+
+      <Route path="faq" element={<Faq />} />
+
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  )
+);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
