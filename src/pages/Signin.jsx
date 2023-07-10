@@ -25,7 +25,8 @@ export default function Signin() {
 
     console.log(loginData);
 
-    fetch("https://localhost:7020/api/User/loginUser", {
+    // fetch("https://localhost:7020/api/User/loginUser", {
+    fetch("https://localhost:7020/api/User/SignInUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
