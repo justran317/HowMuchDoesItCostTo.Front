@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function PagesLayout() {
   return (
     <>
+
       <Navbar bg="primary" data-bs-theme="dark">
         <Container className="navbar-container">
           <Navbar.Brand>Quote It</Navbar.Brand>
@@ -17,6 +18,7 @@ export default function PagesLayout() {
           </Nav>
         </Container>
       </Navbar>
+
 
       <main>
         <Outlet />

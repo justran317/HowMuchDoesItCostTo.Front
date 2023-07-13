@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import Signin from "./pages/Signin";
 import Faq from "./pages/help/Faq";
+import GoogleSignin from "./pages/GoogleSignin";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
 
       <Route path="register" element={<Register />} />
       <Route path="signin" element={<Signin />} />
+      <Route path="google-signin" element={<GoogleSignin />} />
 
       <Route path="faq" element={<Faq />} />
 
