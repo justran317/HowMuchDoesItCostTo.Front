@@ -11,6 +11,7 @@ export default function PagesLayout() {
           <NavLink to="register">Register</NavLink>
           <NavLink to="faq">FAQ</NavLink>
           <NavLink to="test">test</NavLink>
+          <NavLink to="google-signin">gsignin</NavLink>
         </nav>
       </header>
 
