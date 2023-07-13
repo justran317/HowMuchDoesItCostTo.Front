@@ -7,6 +7,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ToastMsg from "../components/Toast";
+import "../register.css";
+
 
 export default function Register() {
   const NAME_REGEX = /^([a-zA-Z]{2,23}\s[a-zA-Z]{2,23})$/;
@@ -147,6 +149,8 @@ export default function Register() {
                 />
                 <Form.Control.Feedback type="invalid">
                   2 to 24 characters.
+                  <br />
+                  Must include first and last name.
                   <br />
                   Must begin with a letter.
                 </Form.Control.Feedback>
